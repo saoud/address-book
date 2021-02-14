@@ -20,7 +20,7 @@ function AddressBook() {
     }
     return false;
   }
-
+  
   AddressBook.prototype.deleteContact = function(id) {
     if (this.contacts[id] === undefined) {
       return false;
@@ -28,7 +28,7 @@ function AddressBook() {
     delete this.contacts[id];
     return true;
   }
-
+  
   // Business Logic for Contacts ---------
   function Contact(firstName, lastName, phoneNumber) {
     this.firstName = firstName;
